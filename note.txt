@@ -1,2 +1,40 @@
 #2.3
 - require : node module을 어딘가에서 가져오는 것
+
+#2.5
+* 바벨 설치
+npm install @babel/node
+* 커맨드 라인 입력:
+npm install @babel/preset-env
+* 커맨드 라인 입력:
+npm install @babel/core
+* 커맨드 라인 입력:
+npm install core-js@3
+
+* .babelrc 파일을 만들어주세요
+* .babelrc 파일에 아래 내용을 입력 후 저장해주세요:
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "entry",
+                "corejs":3
+            }
+        ]
+    ]
+}
+
+*package.json : dependencies
+프로젝트가 실행되려면 필요한 것
+만약 개발자에게 도움이 될 만한 걸 설치하고 싶다면 
+좀 더 편하게 해줄만한 걸 설차할려고 하는 것
+'nodemon'
+dependencies에 포함하려는 게 아니라
+프로젝트를 실행하는데 필요한 게 아니니까
+프로그래머에게 필요한 거니까
+npm install nodemon
+반영하려면 뒤에다가 대문자로 -D
+
+devDependency 
+개발자에게 필요한 것 프로젝트에 필요한 게 아님
