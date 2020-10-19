@@ -38,3 +38,7 @@ npm install nodemon
 
 devDependency 
 개발자에게 필요한 것 프로젝트에 필요한 게 아님
+
+#2.7
+morgan : logging
+    무슨 일이 어디서 일어났는지를 기록
