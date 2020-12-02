@@ -43,17 +43,17 @@ Cloning Youtube with Vanilla and NodeJS
     - 4. 데이터 다루는 성능 높음 : 전송, 받기, 알림, 실시간 처리 등
 
 - #1.2
-- Node.js : 데이터를 다루기에 쓴다
-- 백엔드 : 언어 여러개 (ex. 넷플릭스 : 영상 압축과 영상 전송은 각각 다른 언어로 작성)
+  - Node.js : 데이터를 다루기에 쓴다
+  - 백엔드 : 언어 여러개 (ex. 넷플릭스 : 영상 압축과 영상 전송은 각각 다른 언어로 작성)
 
 - #2.1
-- Express.js : Node.js' framwork
-  - connection 열어주고
-  - connection listen
-  - 파일 처리
-  - html 전송
-  - 데이터 전송
-  - Form에서 데이터 받아 오기
+  - Express.js : Node.js' framwork
+    - connection 열어주고
+    - connection listen
+    - 파일 처리
+    - html 전송
+    - 데이터 전송
+    - Form에서 데이터 받아 오기
 
 - #2.2
   - 설치 : 
