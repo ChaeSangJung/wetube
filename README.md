@@ -157,6 +157,19 @@ Cloning Youtube with Vanilla and NodeJS
   - V : How does the data look
   - C : function that looks for the data
 
+- #2.13 Installing Pug
+  - pug? 🐶
+    - 템플릿 언어
+    - express의 view engine
+
+- #2.15 Partials with Pug
+  - Partials?
+    - 페이지의 일부분
+    - ex. header.pug, footer.pug 등등...
+
+- #2.16 Local Variables in Pug
+  
+  
 ## Review
 - get vs use
 - middlewares
