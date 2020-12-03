@@ -17,23 +17,23 @@ Cloning Youtube with Vanilla and NodeJS
 
 ## Comments
 
-- #0.2
+- #0.2 The State of Fullstack
   - fullstack 수요 많음, 프론트/백엔드 경계 흐릿
 
-- #0.3
+- #0.3 Websites vs Webapps
   - 웹사이트 : 컨텐츠 소비를 위해 방문(뉴스 페이지, 레딧), 단순 소비
   - 웹 어플리케이션 : 움직이고 클릭, 발견, 검색
     - 넷플릭스 : 영화 보여지고, 필터링, 검색
     - 리액트 네이티브 - 구현 힘듦, 인터랙티브 요소 때문에(vanilla js)
 
-- #1.0
+- #1.0 What is NodeJS
   - Node.js : browser밖의 js
     - file system을 다룸
     - 서버 만듦
     - web scrapper 
 => browser와 별도로 작동하는 것을 만듦
 
-- #1.1
+- #1.1 Use Cases for NodeJS
   - why use Node.js?
     - 1. 백엔드, 프론트 엔드 둘다 js로 작성하고자 할 때
     - 2. 거의 모든 것을 customizing 할 수 있다. (아무 것도 없는 상태에서 만들기) Django, Lalavel은 어느 정도 갖춰저 있다.
@@ -42,11 +42,11 @@ Cloning Youtube with Vanilla and NodeJS
       - 채팅 => python(X) 비동기 언어가 아님, 채팅은 Node.js
     - 4. 데이터 다루는 성능 높음 : 전송, 받기, 알림, 실시간 처리 등
 
-- #1.2
+- #1.2 Who Uses NodeJS
   - Node.js : 데이터를 다루기에 쓴다
   - 백엔드 : 언어 여러개 (ex. 넷플릭스 : 영상 압축과 영상 전송은 각각 다른 언어로 작성)
 
-- #2.1
+- #2.1 What is Express
   - Express.js : Node.js' framwork
     - connection 열어주고
     - connection listen
@@ -55,7 +55,7 @@ Cloning Youtube with Vanilla and NodeJS
     - 데이터 전송
     - Form에서 데이터 받아 오기
 
-- #2.2
+- #2.2 Installing Express with NPM
   - 설치 : 
     - wetube 디렉토리 만들어서 → index.js를 만들고 →
     - NPM.JS (Node Pakage Manager, 파일관리시스템) 즉, JS 파일(패키지)관리를 책임져 줌 ! →
@@ -63,7 +63,7 @@ Cloning Youtube with Vanilla and NodeJS
     - npm install express (NPM으로 Express 설치 !) → node modules 폴더 생성됨! →
     - npm install을 통해서, 필요한 것들을 한번에 다운로드 할 수 있음!
 
-- #2.3
+- #2.3 Your First Express Server
   - 서버만들기 (Nodejs&express) :
     - github Repo → gitignore (표준) → [README.md](http://readme.md) (기본설정)
     - require = 모듈을 가져오는 것.
@@ -71,7 +71,7 @@ Cloning Youtube with Vanilla and NodeJS
     - package.json : scripts 생성 (node index.js) = 시작설정하기
   - require : node module을 어딘가에서 가져오는 것
 
-- #2.4
+- #2.4 Handling Routes with Express
   - Routing :
     - GET = 단순히 페이지를 가져오는 것.
     - POST = 정보를 전달.
@@ -80,7 +80,7 @@ Cloning Youtube with Vanilla and NodeJS
     - req = POST 로 전달한 정보를 요청해서, 정보를 받음 !
     - res = 정보를 응답! ( res.send )
 
-- #2.5
+- #2.5 ES6 on NodeJS using Babel
   - babel : 최신의 js코드를 무난난 예전의 js코드로 변환
 
   - * 바벨 설치 : npm install @babel/node
@@ -114,7 +114,7 @@ Cloning Youtube with Vanilla and NodeJS
   - devDependency 
     - 개발자에게 필요한 것 프로젝트에 필요한 게 아님
 
-- #2.6
+- #2.6 Express Core: Middlewares
   - 라우팅 후, 콜백함수 사이에서 동작할 함수. 즉, 사이에 있는 함수.
   - 주의 : next()가 꼭 필요하다 !! 안그럼 다음에 실행할 콜백함수가 실행하지 못할거야!!
   - 각개적용 = 라우팅 - 콜백 사이에 직접 위치해줌.
@@ -128,7 +128,7 @@ Cloning Youtube with Vanilla and NodeJS
         - route 찾음 => handleHome 실행
         - handleHome 응답을 전송
 
-- #2.7
+- #2.7 Express Core: Middlewares part Two
   - morgan : logging
     - 무슨 일이 어디서 일어났는지를 기록
 
@@ -143,3 +143,18 @@ Cloning Youtube with Vanilla and NodeJS
     - helmet - 기초보안담당함
     - cookieParser - 쿠키를 다룰 수 있음
     - bodyParser - form데이터를 서버로 받아와서 활용가능함.
+
+- #2.8 Express Core: Routing
+  - router : 많은 route들이 담긴 파일
+  - use : app.use("/user", userRouter); 
+    - 누군가가 /user경로에 접속을 하면, userRouter 전체를 사용하겠다는 의미
+
+- #2.9 MVC Pattern part One
+  - M : data
+  - V : How does the data look
+  - C : function that looks for the data
+
+## Review
+- get vs use
+- middlewares
+- router vs controller
