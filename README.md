@@ -89,19 +89,22 @@ Cloning Youtube with Vanilla and NodeJS
   - * 커맨드 라인 입력 : npm install core-js@3
 
   - * .babelrc 파일을 만들어주세요
-  - * .babelrc 파일에 아래 내용을 입력 후 저장해주세요:<br>
-  {<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"presets": [<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"@babel/preset-env",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"useBuiltIns": "entry",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"corejs":3<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;]<br>
-  }<br>
-
+  - * .babelrc 파일에 아래 내용을 입력 후 저장해주세요:
+  
+  ``` javascript
+  {
+    [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "corejs":3
+        }
+      ]
+    ]
+  }
+  ```
+  
   - *package.json : dependencies
     - 프로젝트가 실행되려면 필요한 것
     - 만약 개발자에게 도움이 될 만한 걸 설치하고 싶다면 좀 더 편하게 해줄만한 걸 설차할려고 하는 것 'nodemon'
