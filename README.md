@@ -168,8 +168,56 @@ Cloning Youtube with Vanilla and NodeJS
     - ex. header.pug, footer.pug 등등...
 
 - #2.16 Local Variables in Pug
-  
-  
+
+- #2.17 Template Variables in Pug
+  [Global Variables]
+
+  전역적으로 변수를 사용할 수 있게 만들어주는 방법. (res.locals)
+
+  1. 미들웨어를 생성한다.
+  2. 미들웨어를 만들고, 내용으로 res.locals.변수명 << 을 이용해서, 변수를 생성할 수 있다.
+
+  위와 같이 생성한, 변수는 어디에서나 사용할 수 있다.
+
+  [Template Variables]
+
+  각 템플릿에 해당하는 각각의 변수를 생성할 수 있다.
+
+  1. Pug에서 원하는 변수를 원하는 위치에 적어준다 #{변수}
+  2. 컨트롤러로 찾아간다 !
+  3. res.render 에 첫번째 요소로 pug파일을 지정해줬다면, 두번째 요소로는 원하는 변수를 할당해줄 수 있다. ( JSON 형식 )
+
+  **퍼그에서 가장 중요한건 띄어쓰기다 !!ㅠㅠ
+
+- #2.18 Search Controller
+  **queryString에 대하여..**
+
+  사용자가 입력 데이터를 전달하는 방법중의 하나로, url 주소에 미리 협의된 데이터를 파라미터를 통해 넘기는 것을 말한다.
+
+  1. HTML(PUG)에서 form + input 으로 정보를 보낸다. 여기서 form태그는 get방식이어야하며, input태그의 name값이 쿼리이름이 된다.
+  2. Controller에서, req.query << 로 input의 name값으로 보낸 데이터를 받는다.
+  3. 그리고 위 데이터를 다시 PUG로 전달해서 받아준다.
+
+- #2.19 Join : Log In HTML
+  **POST방식 데이터 전송하기**
+
+  1. HTML(PUG)에서, form태그 method를 post로 설정해주고, input에 name속성을 추가해서 정보를 보낸다.
+  2. 라우팅에서 기존에 사용하던 get이 아닌, post로 또다른 하나를 만들어 데이터를 받을 예정.
+
+  헷깔렸던점,
+  join과 login 왜 둘다 action을 'login'으로 잡지?
+  왜 이걸 다 /logIn으로 보내주지?,,,
+
+
+  -> 다음영상에서 해결됨.
+  join 은 /join으로 보내준다. POST << 방식으로, 따라서 이 데이터를 받아 POST에서 처리해서 데이터를 받고, 회원가입을 진행
+  login에서 받은 /login 또한 POST 방식으로 받아서, 데이터베이스를 검색하지 않을까?
+
+- #2.20 Change Profile HTML
+- #2.21 Home Controller
+- #2.22 Home Controller part Two
+- #2.23 Join Controller
+
 ## Review
 - get vs use
 - middlewares
