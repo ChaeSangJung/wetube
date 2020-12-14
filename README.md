@@ -220,6 +220,8 @@ Cloning Youtube with Vanilla and NodeJS
 - #2.24 Log In and User Profile Controller
 - #2.25 More Controlers
 
+- #3.0 MongoDB and Mongoose
+
 ## Review
 - get vs use
 - middlewares
