@@ -217,6 +217,8 @@ Cloning Youtube with Vanilla and NodeJS
 - #2.21 Home Controller
 - #2.22 Home Controller part Two
 - #2.23 Join Controller
+- #2.24 Log In and User Profile Controller
+- #2.25 More Controlers
 
 ## Review
 - get vs use
