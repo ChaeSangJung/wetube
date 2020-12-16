@@ -226,3 +226,8 @@ Cloning Youtube with Vanilla and NodeJS
 - get vs use
 - middlewares
 - router vs controller
+
+## Later to do
+- [ ] buy the webcam 😝
+- [ ] progress timeline : onseek
+- [ ] capture image like youtube preview
