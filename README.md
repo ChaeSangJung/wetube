@@ -46,6 +46,13 @@ Cloning Youtube with Vanilla and NodeJS
   - Node.js : 데이터를 다루기에 쓴다
   - 백엔드 : 언어 여러개 (ex. 넷플릭스 : 영상 압축과 영상 전송은 각각 다른 언어로 작성)
 
+- #2.0 What is a Server
+  - server
+    - 인터넷에 연결된 컴퓨터
+    - 인터넷에 연결된 한 덩어리의 코드
+      - URL에 응답
+      - 접속을 
+
 - #2.1 What is Express
   - Express.js : Node.js' framwork
     - connection 열어주고
