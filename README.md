@@ -51,7 +51,7 @@ Cloning Youtube with Vanilla and NodeJS
     - 인터넷에 연결된 컴퓨터
     - 인터넷에 연결된 한 덩어리의 코드
       - URL에 응답
-      - 접속을 
+      - 접속을 허락
 
 - #2.1 What is Express
   - Express.js : Node.js' framwork
